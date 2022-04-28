@@ -4,11 +4,12 @@ the script is very customizable and the Ai is pretty intelligent for GTA standar
 
 
 <h3>Requirements</h3>
-qb-core
-qb-menu
-qb-target
-nspeedo https://www.gta5-mods.com/vehicles/vapid-speedo-express-add-on-liveries#description_tab
-
+<ol>
+<li>qb-core</li>
+<li>qb-menu</li>
+<li>qb-target</li>
+<li>nspeedo</li>
+</ol>
 
 **Add to qb-core/shared/items**
 
