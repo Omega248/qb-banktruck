@@ -2,6 +2,7 @@
 <p>there are a lot of checks within the script to ensure that the script can not be exploited/abused.<br>
 the script is very customizable and the Ai is pretty intelligent for GTA standards<br></p>
 
+<h3>If you stumble across any bugs please make a bug report so I can fix them thanks</h3>
 
 <h3>Requirements</h3>
 <ol>
