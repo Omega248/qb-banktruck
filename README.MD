@@ -22,6 +22,11 @@ the script is very customizable and the Ai is pretty intelligent for GTA standar
 ['bonds_unionbank'] 			 = {['name'] = 'bonds_unionbank', 			  	['label'] = 'Union Depository Bank Bonds', 	['weight'] = 0, 	['type'] = 'item', 		['image'] = 'certificate.png', 			['unique'] = true, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Ownership certificate for union depository bank bonds'},
 ```
 
+<h3>When the script is active on the hardest difficulty level with all the checks running</h3>
+![Active](https://user-images.githubusercontent.com/86800507/165724812-e086b904-ca37-4e22-b6e2-5266b04a0931.png)
+
+
+
 
 <h3>Make sure you remove qb-banktruck and nspeedo from the main folder and drop them into your script location.</h3>
 
