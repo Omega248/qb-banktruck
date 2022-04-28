@@ -1,4 +1,4 @@
-<h1>A Bank Truck script with difficulty levels for better payouts and unique items</h1>
+<h1>An advanced and more up to date version of qb-truckrobbery with difficulty levels for better payouts and unique items</h1>
 <p>there are a lot of checks within the script to ensure that the script can not be exploited/abused.<br>
 the script is very customizable and the Ai is pretty intelligent for GTA standards<br></p>
 
