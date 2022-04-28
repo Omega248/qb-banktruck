@@ -1,4 +1,4 @@
-local QBCore = exports['qb-core']:GetCoreObject()  							--<< place where the NPC dealer stands
+local QBCore = exports['qb-core']:GetCoreObject() 				
 local VehicleSpawn1 = vector3(-1327.61, -84.16, 48.87)
 local VehicleHeading1 = 0.65 --  		--<< below the coordinates for random vehicle responses
 local BackupBackSpawn1 = vector3(-1327.37, -96.19, 49.33)
@@ -29,7 +29,7 @@ local BackupBackSpawn5 = vector3(1316.46, -721.4, 64.96)
 local BackupBackHeading5 = 68.46
 local BackupFrontSpawn5 = vector3(1335.53, -727.86, 66.26)
 local BackupFrontHeading5 = 74.36
-local TimeToBlow = Config.TimeToBlow * 1000 				--<< bomb detonation time after planting, default 20 seconds
+local TimeToBlow = Config.TimeToBlow * 1000 -- bomb detonation time after planting, default 30 seconds
 local PickupMoney = 0
 local BlowBackdoor = 0
 local GuardsDead = 0
@@ -89,7 +89,7 @@ exports['qb-target']:SpawnPed({
 		  item = Config.RequiredItem
 		}
 	  },
-	  distance = 2.5, -- This is the distance for you to be at for the target to turn blue, this is in GTA units and has to be a float value
+	  distance = 2.5, 
 	},
 })
 
@@ -113,7 +113,7 @@ exports['qb-target']:SpawnPed({
 		  item = 'bonds_mazebank'
 		}
 	  },
-	  distance = 2.5, -- This is the distance for you to be at for the target to turn blue, this is in GTA units and has to be a float value
+	  distance = 2.5,
 	},
 })
 
@@ -137,7 +137,7 @@ exports['qb-target']:SpawnPed({
 		  item = 'bonds_unionbank'
 		}
 	  },
-	  distance = 2.5, -- This is the distance for you to be at for the target to turn blue, this is in GTA units and has to be a float value
+	  distance = 2.5,
 	},
 })
 
@@ -311,7 +311,7 @@ end
 	MissionStart = 1
 	Wait(7500)
 	MissionNotificationSmall()
-	Wait(20000)
+	Wait(120000)
 	SendLocationNotification()
 	QBCore.Functions.Notify("You have received the location", "success")
 	local DrawCoord = math.random(1,5)
@@ -406,7 +406,7 @@ AddEventHandler('AttackTransport:Medium', function()
 	MissionStart = 1
 	Wait(7500)
 	MissionNotificationMedium()
-	Wait(20000)	
+	Wait(120000)	
 	SendLocationNotification()
 	QBCore.Functions.Notify("You have received the location", "success")
 	local DrawCoord = math.random(1,5)
@@ -593,9 +593,9 @@ end)
 RegisterNetEvent('AttackTransport:Large')
 AddEventHandler('AttackTransport:Large', function()
 	MissionStart = 1
-	Wait(100)
+	Wait(7500)
 	MissionNotificationLarge()
-	Wait(200)
+	Wait(120000)
 	SendLocationNotification()
 	QBCore.Functions.Notify("You have received the location", "success")
 	local DrawCoord = math.random(1,5)
