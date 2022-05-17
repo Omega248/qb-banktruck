@@ -34,4 +34,4 @@ the script is very customizable and the Ai is pretty intelligent for GTA standar
 
 <h2>Preview</h2>
 
-[![Preview](https://img.youtube.com/vi/u5TyMyP-LKo/1.jpg)](https://www.youtube.com/watch?v=u5TyMyP-LKo)
+[![Preview](https://img.youtube.com/vi/u5TyMyP-LKo/0.jpg)](https://www.youtube.com/watch?v=u5TyMyP-LKo)
