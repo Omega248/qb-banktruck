@@ -883,11 +883,14 @@ end)
 RegisterNetEvent('AttackTransport:truckhealth')
 AddEventHandler('AttackTransport:truckhealth', function()
 	while true do
-       	Wait(500)			
-		TruckDead = GetEntityHealth(transport)
+       	Wait(500)
+			local TruckCoords = GetEntityCoords(transport)
+            local PlyCoords = GetEntityCoords(PlayerPedId())
+            local dist = #(TruckCoords - PlyCoords)
+		    TruckHealth = GetEntityHealth(transport)
 			if Complete == true then break
 			else
-			if TruckDead == 0 then QBCore.Functions.Notify("The truck has been destroyed, You have failed the job", "error") TriggerEvent('AttackTransport:CleanUp') break
+			if TruckHealth == 0 and dist <= 200 then QBCore.Functions.Notify("The truck has been destroyed, You have failed the job", "error") TriggerEvent('AttackTransport:CleanUp') break
 		end
 	end
 end
