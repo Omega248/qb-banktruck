@@ -1013,7 +1013,7 @@ Citizen.CreateThread(function()
 			else
 			Citizen.Wait(500)
 			end
-			if dist <= 7 and BlownUp == 0 and PlayerJob.name ~= 'police' then
+			if dist <= 7 and BlownUp == 0 then
 				if BlowBackdoor == 0 then
 					hintToDisplay('Press [G] to blow up the back door and take the money')
 					BlowBackdoor = 1
