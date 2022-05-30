@@ -18,6 +18,8 @@ Config.PedModelLarge = 'ig_bankman'
 
 Config.PedLocationLarge = vector4(11.75, -661.49, 33.45, 94.29)
 
+Config.dispatch = true
+
 Config.PackingTimeLow = math.random(60,90) -- time it takes to pack all the money into the bag. Its 1000x so every 1 = 1 second
 
 Config.PackingTimeMedium = math.random(90,150) -- time it takes to pack all the money into the bag. Its 1000x so every 1 = 1 second
