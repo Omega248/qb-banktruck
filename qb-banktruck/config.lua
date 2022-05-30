@@ -18,7 +18,9 @@ Config.PedModelLarge = 'ig_bankman'
 
 Config.PedLocationLarge = vector4(11.75, -661.49, 33.45, 94.29)
 
-Config.dispatch = true
+Config.dispatch = true -- set to false if not using qb-dispatch or ps-dispatch
+
+Config.dispatchtype = 'qb-dispatch' -- change to 'ps-dispatch' if using more up to date version of the dispatch
 
 Config.PackingTimeLow = math.random(60,90) -- time it takes to pack all the money into the bag. Its 1000x so every 1 = 1 second
 
