@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject() 				
 local VehicleSpawn1 = vector3(-1327.61, -84.16, 48.87)
-local VehicleHeading1 = 0.65 --  		--<< below the coordinates for random vehicle responses
+local VehicleHeading1 = 0.65
 local BackupBackSpawn1 = vector3(-1327.37, -96.19, 49.33)
 local BackupBackHeading1 = 3.57
 local BackupFrontSpawn1 = vector3(-1326.22, -106.84, 49.17)
@@ -29,7 +29,7 @@ local BackupBackSpawn5 = vector3(1316.46, -721.4, 64.96)
 local BackupBackHeading5 = 68.46
 local BackupFrontSpawn5 = vector3(1335.53, -727.86, 66.26)
 local BackupFrontHeading5 = 74.36
-local TimeToBlow = Config.TimeToBlow * 1000 -- bomb detonation time after planting, default 30 seconds
+local TimeToBlow = Config.TimeToBlow * 1000
 local PickupMoney = 0
 local BlowBackdoor = 0
 local GuardsDead = 0
@@ -1034,7 +1034,10 @@ function CheckVehicleInformation()
 		if IsVehicleSeatFree(transport, -1) and IsVehicleSeatFree(transport, 0) and IsVehicleSeatFree(transport, 1) and GuardsDead == 1 then
 			SetVehicleDoorsLockedForAllPlayers(transport, true)
 			if not IsEntityInWater(PlayerPedId()) then
-				exports['qb-dispatch']:VanRobbery()
+                if Config.dispatch == true then
+				exports[Config.dispatchtype]:VanRobbery()
+                else
+                end
 				RequestAnimDict("anim@heists@ornate_bank@thermal_charge")
 				RequestModel("hei_p_m_bag_var22_arm_s")
 				while not HasAnimDictLoaded("anim@heists@ornate_bank@thermal_charge") or not HasModelLoaded("hei_p_m_bag_var22_arm_s") do Wait(50) end
